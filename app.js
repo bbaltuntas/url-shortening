@@ -1,7 +1,7 @@
 const express = require("express")
 const axios = require('axios')
 let app = express()
-const port = 3000
+const port = process.env.PORT
 
 app.use(express.urlencoded({extended: true}))
 app.use(express.static("public"))
@@ -34,6 +34,6 @@ app.post("/", (req, res) => {
 
 })
 
-app.listen(port, () => {
+app.listen(port || 3000, () => {
     console.log(`App is running on http://localhost:${port}`)
 })

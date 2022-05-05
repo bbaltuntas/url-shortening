@@ -21,7 +21,7 @@
             <input class="form-control sharpEdge" type="text" name="url" id="url-text"
                    placeholder="Shorten a link here ...">
 
-            <button class="btn blue sharpEdge" type="submit" name="shortenButton">Shorten It!
+            <button class="btn blue sharpEdge" type="submit" name="button" value="shortenButton">Shorten It!
             </button>
         </form>
         <div class="invalid">
@@ -34,11 +34,15 @@
             <div class="new-url sharpEdge box-shadow">
                 <span><%= element.url %></span>
                 <hr class="hr">
-                <div class="button-group">
+                <form action="/" method="post" class="button-group">
                     <span><a href="<%= element.shortLink %>" target="_blank"
                              rel="noopener noreferrer"><%= element.shortLink %> </a></span>
                     <button class="btn btn-sm blue sharpEdge">Copy</button>
-                </div>
+                    <div class="remove-icon">
+                        <button name="button" value="<%= element.shortLink %>" type="submit"><i
+                                    class="fa-solid fa-xmark fa-2xl"></i></button>
+                    </div>
+                </form>
             </div>
         <% }) %>
 

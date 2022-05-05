@@ -143,6 +143,19 @@ body {
     justify-content: space-around;
 }
 
+.button-group button[type="submit"] {
+    border: none;
+    background-color: transparent;
+}
+
+.remove-icon {
+    display: flex;
+    align-items: center;
+    color: var(--darkViolette);
+    width: min-content;
+    align-self: center;
+}
+
 .new-url button {
     min-width: max-content;
     align-self: center;

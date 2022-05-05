@@ -1,0 +1,93 @@
+<%- include("partials/header") -%>
+
+
+<!--Main Content-->
+<div class="main-cont mt-5">
+
+    <!--Header Content-->
+    <div class="header-cont">
+        <div class="header-text">
+            <h1 class="fw-bold">More than just shorter links</h1>
+            <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+            <button class="btn blue px-4" type="submit">Get Started</button>
+        </div>
+        <div class="header-img">
+            <img src="/images/illustration-working.svg" alt="">
+        </div>
+    </div>
+
+    <div class="url-shorten-cont sharpEdge mt-5">
+        <form class="url-input-cont validation" action="/" method="post">
+            <input class="form-control sharpEdge" type="text" name="url" id="url-text"
+                   placeholder="Shorten a link here ...">
+
+            <button class="btn blue sharpEdge" type="submit" name="shortenButton">Shorten It!
+            </button>
+        </form>
+        <div class="invalid">
+            Please add a valid link
+        </div>
+    </div>
+
+    <div class="url-output-content ">
+        <% urlList.forEach(function (element) { %>
+            <div class="new-url sharpEdge box-shadow">
+                <span><%= element.url %></span>
+                <hr class="hr">
+                <div class="button-group">
+                    <span><a href="<%= element.shortLink %>" target="_blank"
+                             rel="noopener noreferrer"><%= element.shortLink %> </a></span>
+                    <button class="btn btn-sm blue sharpEdge">Copy</button>
+                </div>
+            </div>
+        <% }) %>
+
+    </div>
+    <div class="stats-cont">
+        <div class="stats-header">
+            <h1 class="fw-bold">Advanced Statistics</h1>
+            <p>Track how your links are perfroming across the
+                web with our advanced statistics dashboard</p>
+        </div>
+        <div class="stats-content">
+            <div class="stat sharpEdge brand-cont box-shadow">
+                <div class="icon icon-brand">
+                    <img src="/images/icon-brand-recognition.svg" alt="">
+                </div>
+                <h5>Brand Recognition</h5>
+                <p> Boost your brand recognition with each click. Generic links don’t
+                    mean a thing. Branded links help instil confidence in your content.</p>
+            </div>
+
+            <div class="stat sharpEdge  records-cont box-shadow">
+                <div class="icon icon-records">
+                    <img src="/images/icon-detailed-records.svg" alt="">
+                </div>
+                <h5>Detailed Records</h5>
+                <p>Gain insights into who is clicking your links. Knowing when and where
+                    people engage with your content helps inform better decisions.
+                </p>
+            </div>
+            <div class="stat sharpEdge custom-cont box-shadow">
+                <div class="icon icon-custom">
+                    <img src="/images/icon-fully-customizable.svg" alt="">
+                </div>
+                <h5>Fully Customizable</h5>
+                <p>Improve brand awareness and content discoverability through customizable
+                    links, supercharging audience engagement.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div class="get-started">
+    <h2 class="fw-bold">Boost your links today</h2>
+    <button class="btn blue mt-2">Get Started</button>
+</div>
+
+
+<%- include("partials/footer") -%>

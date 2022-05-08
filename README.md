@@ -84,7 +84,7 @@ const proudOfThisFunc = () => {
     console.log('🎉')
 }
 ```
-#Installation
+## Installation
 To run the web app on your local computer you need Node.js to run.
 ```
 cd todolist-v1

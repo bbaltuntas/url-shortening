@@ -15,9 +15,7 @@ the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://
    
 - [Installation](#installation)   
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 

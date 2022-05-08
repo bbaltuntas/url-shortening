@@ -12,9 +12,8 @@ the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://
     - [Links](#links)
 - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
+   
+- [Installation](#installation)   
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
